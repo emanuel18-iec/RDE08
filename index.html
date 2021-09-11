@@ -6,10 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
         <title>RDE 08</title>
-        <script>
+        <!--<script>
             var name = prompt("Qual o seu nome?");
             alert("Seja muito bem vindo, " + name + "!!");
-        </script>
+        </script>-->
     </head>
     <body>
         <div id="conteudoPrincipal">
@@ -22,7 +22,7 @@
                        text-indent: 0%;">por: Gabriel Emanuel</p>
             <figure>
                 <details>
-                    <summary>TAGS</summary>
+                    <summary class="tg">TAGS</summary>
                     <div id="listTags">
                         <table id="table-listTags">
                             <caption>Listagem das TAG'S</caption>
@@ -57,7 +57,8 @@
             </figure>
 
             <br><br>
-            <h2>Tag: <span>&lt;TABLE&gt;</span></h2><a name="tagTABLE"></a><br>
+            <a name="tagTABLE"></a><br>
+            <h2>Tag: <span>&lt;TABLE&gt;</span></h2>
             <p>A tag <i>&lt;table&gt;</i> é responsável por definir a demarcação de uma tabela. Tabela, basicamente, é a disposição de dados em duas dimensões: linhas e colunas. Uma tabela permite consultar de forma rápida e fácil valores que indicam algum tipo de conexão entre diferentes tipos de dados, por exemplo, uma pessoa e sua idade, ou um dia da semana, ou os horários de uma piscina local.</p>
             <figure class="fc"><br>
                 <img src="img/swimming-timetable.png" alt="Exemplificando o que é uma tabela"><br><br>
@@ -78,10 +79,38 @@
             <p>Inicialmente, criamos algumas células que constituem uma linha. Mas, do ponto de vista do HTML, são consideradas apenas 4 colunas. Sendo assim, vamos definir que elas constituem uma linha, da seguinte forma:  </p><br>
             <figure class="fc"><img src="img/tr.jpg" alt="Exemplicando a tag <tr>"></figure>
             <br><p>Observe que a exibição da tabela não mudou.</p><br>
-            <figure class="fc"><img src="img/tr-tdadap.jpg" alt="Visualizando a mudança após adicionar a <tr> ao código anterior"></figure>
+            <figure class="fc"><img src="img/tr-tdadap.jpg" alt="Visualizando a mudança após adicionar a <tr> ao código anterior"></figure><br>
+            <p>Agora, vamos adicionar mais uma ou mais linhas à nossa tabela. Lembrando que, para tal, é necessário utilizar a tag <i>&lt;tr&gt;</i> envolvendo as células que serão criadas com a tag <i>&lt;td&gt;</i>. No meu caso, criarei duas linhas além daquela já criada e, para cada célula, usarei uma notação matricial. Observe:</p><br>
+            <figure class="fc"><img src="img/tr-ex3liCOD.jpg" alt="Exemplicando a utilização das tags <tr> em sequencia -  COD"></figure><br>
+            <p>Na prática, a tabela fica assim:</p><br>
+            <figure class="fc"><img src="img/tr-ex3liPRAT.jpg" alt="Exemplicando a utilização das tags <tr> em sequencia -  PRAT"></figure><br>
+            <h3 style="margin-right: 2%;"><span style="font-size: 1.3em;">&#10149;</span> &lt;th&gt; <span style="font-size: 1.3em;">&#10170;	</span><span style="font-size: 16px;">É uma tag que corresponde a uma função de cabeçalho, "nomeando" a linha ou a coluna em questão. Para ficar mais claro, vamos utilizar uma tabela para dividir os números de 0 a 10 na sua respectiva coluna que indique se ele é par ou impar, da seguinte forma:</span></h3><br>
+            <figure class="fc"><img src="img/tablenmrs.jpg" alt="Tabela solicitada"></figure><br>
+            <p>Para esse caso, utilizei-me deste código:</p><br>
+            <figure class="fc"><img src="img/tablenmrscdg.jpg" alt="Resolução da tabela solicitada"></figure><br>
+            <p>Mas, e se fossemos "capotar" a tabela, deixando os números agora dispostos nas linhas, ao contrário do caso anterior, no qual eles estavam dispostos em coluna?</p><br>
+            <figure class="fc"><img src="img/tablenmrcol.jpg" alt="Tabela solicitada"></figure><br>
+            <p>O seguinte código, resolveria muito bem à situação: </p><br>
+           <figure class="fc"><img src="img/tablenmrcolcdg.jpg" alt="Resolução da tabela solicitada"></figure><br>
+            <p>Ainda é possível usar outros elementos em tabelas, como, por exemplo, <a href="http://comhtml.blogspot.com/2013/07/mesclando-as-celulas-de-uma-tabela-com.html" target="_blank">mesclar células</a>, através do atributo <span class="atr">colspan</span> para as colunas ou do atributo <span class="atr">rowspan</span> para as fileiras, também é possível trabalhar com <a href="https://www.w3schools.com/tags/tag_colgroup.asp" target="_blank">grupos de cores</a>, através da tag &lt;coulgroup&gt; e &lt;col&gt;</p>
+            <br>
+            <details>
+                <summary>O que é mesclar células em uma tabela? Exemplo prático!</summary>
                 <br>
+                <p>Tabela:</p><br>
+                <div style="overflow: hidden;"><iframe style="  width: 80%;
+                                                                height: 75%;
+                                                                margin-left: 10%;"
+                src="exampleTableExtra.html" frameborder="0"></iframe>            
+                </div><br>
+                <p>Código</p>
+                <figure class="fc"><img src="img/tableEXF-cdg.jpg" alt="Código do Exemplo Prático"></figure><br>
+                <p>Exemplo retirado e adaptado de:<a href="https://fir3.net/JzsH" target="_blank"> Tabela com células mescladas</a></p>
+            </details>
 
-                
+            <a name="tagDEL"></a><br>
+            <h2>Tag: <span>&lt;DEL&gt;</span></h2>
+
             <br>
             <br>
             <br>
@@ -97,15 +126,13 @@
             <br>
             <br>
             <br>
+            <div id="citacoes">
+                <ul>
+                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Tables/Basics">https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Tables/Basics</a> - acesso em 11/09/2021</li>
+                </ul>
+            </div>
             <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <p><b>Ultima modificação em</b>: 11/09/2021 às 17:10, horário oficial do Brásil - Brasil</b></p>
+            <p><b>Ultima modificação em</b>: 11/09/2021 às 20:33, horário oficial de Brasilia - Brasil</b></p>
         </div>
     </body>
 </html>

@@ -12,12 +12,18 @@
 
 summary{
     margin-left: 2%;
+
+}
+
+.tg{
+    margin-left: 2%;
     font-style: bold;
     padding: 2%;
     width: 5%;
     background-color: cyan;
     border: 2px solid #000;
     font-family: 'Acme', sans-serif;
+    cursor: pointer;
 }
 
 p, img{
