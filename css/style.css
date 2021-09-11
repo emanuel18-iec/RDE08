@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Acme', sans-serif;
+}
+
+summary{
+    margin-left: 2%;
+    font-style: bold;
+    padding: 2%;
+    width: 5%;
+    background-color: cyan;
+    border: 2px solid #000;
+}
+
+.ptext{
+    text-indent: 4%;
+    
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+body {
+    background-color: rgb(182, 207, 176);
+    text-align: justify;
+}
+
+#listTags{
+    border: 2px solid #000;
+    width: 96%;
+    margin-left: 2%;
+    font-size: 23px;
+    
+}
+
+#table-listTags, caption{
+    width: 100%;
+    background-color: cyan;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+#conteudoPrincipal{
+    width: 80%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-left: 10%;
+    border: 6px solid #000;
+    background-color: rgb(56, 233, 33);
+    box-shadow: 15px 15px 10px rgb(10, 85, 0);
+}
+
+h1{
+    text-align: center;
+    font-family: 'Rock Salt', cursive;
+}
+
+h2{
+    font-family: 'Balsamiq Sans', cursive;   
+    margin-left: 5%;
+}
+h2 span{
+    font-family: 'Balsamiq Sans', cursive;   
+    color: red;
+    
+}
