@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@600&display=swap');
+
 
 *{
     padding: 0%;
     margin: 0%;
-    font-family: 'Acme', sans-serif;
+    font-family: 'Exo 2', sans-serif;
 }
 
 summary{
@@ -15,18 +17,22 @@ summary{
     width: 5%;
     background-color: cyan;
     border: 2px solid #000;
+    font-family: 'Acme', sans-serif;
 }
 
-.ptext{
+p, img{
     text-indent: 4%;
-    
     margin-left: 2%;
     margin-right: 2%;
 }
 
 body {
-    background-color: rgb(182, 207, 176);
+    background-color: rgb(31, 97, 14);
     text-align: justify;
+}
+
+.fc{
+    text-align: center;
 }
 
 #listTags{
@@ -56,14 +62,23 @@ body {
 h1{
     text-align: center;
     font-family: 'Rock Salt', cursive;
+    font-weight: bold;
+    
+    margin-left: 0%;
+    margin-right: 0%;
 }
 
 h2{
     font-family: 'Balsamiq Sans', cursive;   
     margin-left: 5%;
 }
+
 h2 span{
     font-family: 'Balsamiq Sans', cursive;   
     color: red;
-    
+}
+
+h3{
+     font-family: 'Balsamiq Sans', cursive;   
+    margin-left: 3.4%;
 }

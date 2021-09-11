@@ -6,6 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
         <title>RDE 08</title>
+        <script>
+            var name = prompt("Qual o seu nome?");
+            alert("Seja muito bem vindo, " + name + "!!");
+        </script>
     </head>
     <body>
         <div id="conteudoPrincipal">
@@ -13,7 +17,9 @@
             <p style="
                        text-align: center;
                        font-weight: bold;
-                       font-size: 20px;">por: Gabriel Emanuel</p>
+                       font-family: 'Acme', sans-serif;
+                       font-size: 20px;
+                       text-indent: 0%;">por: Gabriel Emanuel</p>
             <figure>
                 <details>
                     <summary>TAGS</summary>
@@ -51,31 +57,55 @@
             </figure>
 
             <br><br>
-            <h2>Tag: <span>&lt;TABLE&gt;</span></h2><a name="tagTABLE"></a>
+            <h2>Tag: <span>&lt;TABLE&gt;</span></h2><a name="tagTABLE"></a><br>
+            <p>A tag <i>&lt;table&gt;</i> é responsável por definir a demarcação de uma tabela. Tabela, basicamente, é a disposição de dados em duas dimensões: linhas e colunas. Uma tabela permite consultar de forma rápida e fácil valores que indicam algum tipo de conexão entre diferentes tipos de dados, por exemplo, uma pessoa e sua idade, ou um dia da semana, ou os horários de uma piscina local.</p>
+            <figure class="fc"><br>
+                <img src="img/swimming-timetable.png" alt="Exemplificando o que é uma tabela"><br><br>
+            </figure>
+            <p>É possível facilmente relacioná-la com matrizes</p><br>
+            <figure class="fc">
+                <img src="img/matriz.jpg" alt="Exemplificando a matriz"><br><br>
+            </figure>
+            <p>As tabelas possuem estrutura. As informações são facilmente interpretadas fazendo associações visuais entre os cabeçalhos de linha e coluna.</p>
+            <p>O conteúdo de cada tabela é delimitada por estas duas tags: &lt;table&gt;&lt;/table&gt;. Dentro delas, trabalha-se com outras tags e atributos para manipular as linhas e colunas.</p>
+            <h3 style="margin-right: 2%;"><span style="font-size: 1.3em;">&#10149;</span> &lt;td&gt; <span style="font-size: 1.3em;">&#10170;	</span><span style="font-size: 16px;">É a tag responsável por criar células em uma linha. Por exemplo, se forem utilizados "<i>4 &lt;td&gt;s</i>", seriam criados 4 células em uma linha. Observe:</span></h3>
+            <p>Código:</p>
+            <figure class="fc"><img src="img/td.jpg" alt="Exemplicando a tag <td>"></figure>
+            <p>O resultado deve ficar semelhante a esse:</p><br>
+            <figure class="fc"><img src="img/td-result.jpg" alt="Exemplicando a tag <td> na prática"></figure>
+            
+            <h3 style="margin-right: 2%;"><span style="font-size: 1.3em;">&#10149;</span> &lt;tr&gt; <span style="font-size: 1.3em;">&#10170;</span><span style="font-size: 16px;"> É responsável por interromper o crescimento desta linha e começar a colocar células subsequentes em uma segunda linha, precisamos usar o elemento &lt;tr&gt; ('tr' significa 'linha da tabela'). Vamos trabalhar isso agora.</span></h3>
+            <p>Inicialmente, criamos algumas células que constituem uma linha. Mas, do ponto de vista do HTML, são consideradas apenas 4 colunas. Sendo assim, vamos definir que elas constituem uma linha, da seguinte forma:  </p><br>
+            <figure class="fc"><img src="img/tr.jpg" alt="Exemplicando a tag <tr>"></figure>
+            <br><p>Observe que a exibição da tabela não mudou.</p><br>
+            <figure class="fc"><img src="img/tr-tdadap.jpg" alt="Visualizando a mudança após adicionar a <tr> ao código anterior"></figure>
+                <br>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <p><b>Ultima modificação em: 11/09/2021 às 14:59, horário oficial de Brásil - Brasil</b></p>
+                
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p><b>Ultima modificação em</b>: 11/09/2021 às 17:10, horário oficial do Brásil - Brasil</b></p>
         </div>
     </body>
 </html>
