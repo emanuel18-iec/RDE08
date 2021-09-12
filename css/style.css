@@ -107,3 +107,9 @@ blockquote, q{
     margin-left: 22%;
     padding: 1% 2.5% 1% 2.5%;   
 }
+
+#tagSem{
+    border: 2px solid #000;
+    width: 80%;
+    margin-left: 10%;
+}
