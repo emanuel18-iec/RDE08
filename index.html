@@ -7,6 +7,63 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/tableAtributoDel.css">
         <title>RDE 08</title>
+        <style>
+            td, th {
+                border: 1px solid rgb(190,190,190);
+                padding: 10px 20px;
+            }
+            .info-table {
+                border-spacing: 0;
+                border-collapse: separate;
+                width: 90%;
+                color: #314351;
+                font-size: 0.857em;
+                line-height: 1em;
+                margin-bottom: 17px;
+                font-family: "museo-sans",sans-serif;
+            }
+            .info-table a {
+                color: #4183C4;
+                text-decoration: none;
+            }
+            .info-table a:hover {
+                color: #2a5886;
+                text-decoration: none;
+                background-color: inherit;
+            }
+            .info-table th, .info-table td {
+                border: 1px solid #BCBABA;
+                border-top-color: #FFF;
+                border-right: none;
+                padding: 8px 20px 8px 23px;
+                text-align: left;
+                vertical-align: middle;
+                background: #EEE;
+                margin: 0;
+            }
+            .info-table th {
+                background: #58a7e6;
+                text-align: left;
+                font-size: 1.083em;
+                line-height: 1.538em;
+                padding: 6px 20px 5px 23px;
+                color: #ddedfa;
+                text-shadow: 0px -1px 1px rgba(0, 81, 168, 0.38);
+                border-color: #2c90df;
+                font-weight: 900;
+            }
+            .info-table th:last-child {
+                border-right: 1px solid #BCBABA;
+                text-align: center;
+            }
+            .info-table td.last, .info-table td:last-child {
+                border-right: 1px solid #C2CAD0;
+            }
+            .info-table .even td, .info-table tr:nth-child(even) td {
+                background: #E7E7E7;
+            }
+
+        </style>
 
         <!--<script>
             var name = prompt("Qual o seu nome?");
@@ -25,8 +82,8 @@
             <figure>
                 <details>
                     <summary class="tg">TAGS</summary>
-                    <div id="listTags">
-                        <table id="table-listTags">
+                    <div id="listTags" >
+                        <table id="table-listTags" style="border-color:cyan">
                             <caption>Listagem das TAG'S</caption>
                             <td style="font-style: none;">
                                 <p><span style="font-style: bold; font-size: 1.5em;">&#8618;</span>  <a href="#tagTABLE">tag <i>&lt;table&gt;</i></a></li></p>
@@ -39,7 +96,7 @@
                                 <p><span style="font-style: bold; font-size: 1.5em;">&#8618;</span>  <a href="#tagBLOCKQUOTE">tag <i>&lt;blockquote&gt;</i></a></li></p>
                                 <p><span style="font-style: bold; font-size: 1.5em;">&#8618;</span>  <a href="#tagQ">tag <i>&lt;q&gt;</i></a></li></p>
                                 <p><span style="font-style: bold; font-size: 1.5em;">&#8618;</span>  <a href="#tagABBR">tag <i>&lt;abbr&gt;</i></a></li></p>
-                                <p><span style="font-style: bold; font-size: 1.5em;">&#8618;</span>  <a href="#tagADDRESS">tag <i>&lt;address&gt;</i></a></li></p>
+                                <p><span style="font-sty    le: bold; font-size: 1.5em;">&#8618;</span>  <a href="#tagADDRESS">tag <i>&lt;address&gt;</i></a></li></p>
                                 <p><span style="font-style: bold; font-size: 1.5em;">&#8618;</span>  <a href="#tagCITE">tag <i>&lt;cite&gt;</i></a></li></p>
                             </td>
                             <td>
@@ -48,13 +105,8 @@
                                 <p><span style="font-style: bold; font-size: 1.5em;">&#8618;</span>  <a href="#tagPRE">tag <i>&lt;pre&gt;</i></a></li></p>
                                 <p><span style="font-style: bold; font-size: 1.5em;">&#8618;</span>  <a href="#tagKBD">tag <i>&lt;kbd&gt;</i></a></li></p>
                             </td>
-                        </table>
-                        
-                        
+                        </table>                        
                     </div>
-                    <summmary>
-                        
-                    </summmary>
                 </details>
             </figure>
 
@@ -131,8 +183,8 @@
                     </center>
                 </big>
             </div>
-            <br><br><p>Mesmo sendo uma tag que altere um aspecto visual de uma página HTML, ele pode conter dois atributos:</p><br>
-            <table class="info-table">
+            <br><br><a name="tabAtrDEL"></a><p>Mesmo sendo uma tag que altere um aspecto visual de uma página HTML, ele pode conter dois atributos:</p><br>
+            <table class="info-table" style="margin-left: 5%;">
                 <tr>
                     <th>Atributo</th>
                     <th>Valor</th>
@@ -152,11 +204,28 @@
 
                 </tr>
             </table>
+            <br><br>
+            <a name="tagINS"></a><br>
+            <h2>Tag: <span>&lt;INS&gt;</span></h2><br>
+            <p>Em termos muito práticos, funciona da mesma forma que com a tag <a href="tagDEL" style="text-decoration: none;">&lt;del&gt;</a> porém, o efeito visual causado é diferente. Ao invés de tachar, a tag <ins>sublinhará</ins> o texto!</p>
+            <p>Por formalidade, a sua sintaxe padrão é:</p>
+            <br><figure class="fc"><img src="img/inssint.jpg" alt="Codigo de Exemplo"></figure><br>
+            <p>Exemplo prático:</p>
+            <br><figure class="fc"><img src="img/cdgExIns.jpg" alt="Codigo de Exemplo"></figure><br>
+            <p>Resultado:</p><br>
+            <div style="border: 2px solid #000;
+                        padding: 1%;
+                        width: 20%;
+                        margin-left: 40%;
+                        ">
+                <big>
+                    <center>
+                        <p>Minha cor favorita é <font color=red><del>vermelha</del></font> <ins>azul!</ins></p>
+                    </center>
+                </big>
+            </div>
             
-            </style>
-            <br>
-            <br>
-            <br>
+            <br><p>Os mesmos atributos que são válidos para a tag &lt;del&gt;, também são válidas para a tag &lt;ins&gt;.<i>(<a href="#tabAtrDEL">Clique aqui para revisá-los</a>)</i></p>
             <br>
             <br>
             <br>
@@ -172,10 +241,13 @@
             <div id="citacoes">
                 <ul>
                     <li><a href="https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Tables/Basics">https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Tables/Basics</a> - acesso em 11/09/2021</li>
+                    <il><a href="https://www.w3bai.com/pt/tags/tag_del.html">https://www.w3bai.com/pt/tags/tag_del.html</a> - acesso em 11/09/2021</il>
+                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/del">https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/del</a> - acesso em 11/09/2021</li>
+                    <li><a href="https://www.w3schools.com/tags/tag_ins.asp">https://www.w3schools.com/tags/tag_ins.asp</a> - acesso em 11/09/2021</li>
                 </ul>
             </div>
             <br>
-            <p><b>Ultima modificação em</b>: 11/09/2021 às 21:37, horário oficial de Brasilia - Brasil</b></p>
+            <p><b>Ultima modificação em</b>: 11/09/2021 às 22:36, horário oficial de Brasilia - Brasil</b></p>
         </div>
     </body>
 </html>
