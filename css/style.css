@@ -95,8 +95,15 @@ h3{
     margin-left: 3.4%;
 }
 
-blockquote{
+blockquote, q{
     margin-left: 2%;
     margin-right: 2%;
     color: rgb(255, 51, 0);   
+}
+
+#citacoes{
+    border: 2px solid #000;
+    width: 70%;
+    margin-left: 22%;
+    padding: 1% 2.5% 1% 2.5%;   
 }
