@@ -11,15 +11,6 @@
 }
 
 
-h1{
-  text-align: center;
-  font-family: 'Rock Salt', cursive;
-  font-weight: bold;
-  
-  margin-left: 0%;
-  margin-right: 0%;
-}
-
 h2{
   font-family: 'Balsamiq Sans', cursive;   
   margin-left: 5%;
@@ -40,6 +31,19 @@ p, img{
   margin-right: 2%;
 }
 
+table{
+    width: 90%;
+    margin-left: 5%;
+}
+th{
+    width: 30%;
+}
+
 table, td, th{
   border: 2px solid #000;
+} 
+th:hover{
+    background-color: rgb(43, 170, 26);
+    cursor: pointer;
+    box-shadow: 2% 2% 5% #000;
 }

@@ -451,6 +451,22 @@
             <br><p>Exemplo:</p><br>
             <figure class="fc"><img src="img/cdgExCode.jpg" alt="Exemplo <code>"></figure>
             <br><p>Resultado:</p><br>
+            <figure class="fc"><img src="img/-res-cdgExCode.jpg" alt="Resultado <code>"></figure>
+            <p style="text-align: right;">Exemplo adaptado de: <a href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_phrase_code">https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_phrase_code</a></p>
+            <br><br>
+            <p><big>Compatibilidade com Navegadores</big></p><br>
+            <figure class="fc" style="width: 100%;"><img src="img/compartCode.jpg" alt="Compatibilidade com navegadores da tag <code>"></figure>
+            
+            <br><br>
+            <a name="tagPRE"></a><br><br>
+            <h2>Tag: <span>&lt;PRE&gt;</span></h2><br>
+            <p>O marcador &lt;pre&gt; (<i>"Preformatted Text Element"</i>) ou texto pré-formatado, é utilizado para inserir um conteúdo que se deseja seja visualizado do modo como foi editado. Para destacar o conteúdo a fonte visualizada é <span style="font-family: monospace;">"monospace"</span>.</p>
+            <p>As tags &lt;p&gt;&lt;/p&gt; e &lt;br&gt; não devem ser utilizadas, pois descaracterizam as funções da tag &lt;pre&gt;&lt;/pre&gt;</p>
+            <br><p>Sintaxe:</p>
+            <figure class="fc"><img src="img/presint.jpg" alt="Sintaxe <pre>"></figure>
+            <br><p>Exemplo 1)</p><br>
+            <figure class="fc"><img src="img/cdgExPre.jpg" alt="Exemplo <pre>"></figure>
+            <br><p>Resultado:</p><br>
             <div style="border: 2px solid #000;
                         padding: 1%;
                         width: 50%;
@@ -458,21 +474,120 @@
                         ">
                 <big>
                     <center>
-                        <p>A função <code>selectAll()</code> destaca todo o texto no
-                            campo de entrada então o usuário pode, por exemplo, copiar ou deletar o texto.</p>
-                            
+                        <pre>
+                            p {
+                                background: #000000;
+                                color: #FFFFFF;
+                                margin-left: 0px;
+                                padding: 10px;
+                                text-align: left;
+                            }</pre>    
+                    </center>
+                </big>
+            </div><br>
+            <p>Exemplo 2)</p>
+            <p>Se fizermos uma sutil alteração na IDENTAÇÃO deste mesmo código:</p><br>
+            <figure class="fc"><img src="img/cdgExTwoPre.jpg" alt="Exemplo <pre>"></figure>
+            <br><p>Que resulta num aspecto visual consideravelmente diferente do que o anterior, observe:</p><br>
+            <div style="border: 2px solid #000;
+                        padding: 1%;
+                        width: 50%;
+                        margin-left: 25%;
+                        ">
+                <big>
+                    <center>
+                        <pre>
+            p {
+                background: #000000;
+                color: #FFFFFF;
+                margin-left: 0px;
+                padding: 10px;
+                text-align: left;
+            }</pre>    
                     </center>
                 </big>
             </div>
 
+            <br><br>
+            <a name="tagKBD"></a><br><br>
+            <h2>Tag: <span>&lt;KBD&gt;</span></h2><br>
+            <p>O marcador &lt;kbd&gt; (<i>"Keyboard Input Element"</i>) ou chave(s) de entrada ou comando(s) é utilizado para orientar usuários em instruções normalmente "on line", ou impressas. Para destacar o(s) comando(s) a fonte visualizada é <span style="font-family: monospace;">"monospace"</span>.</p>
+            <p>O elemento HTML representa uma extensão de texto embutido denotando a entrada textual do usuário a partir de um teclado, entrada de voz ou qualquer outro dispositivo de entrada de texto. Por convenção, o padrão do agente do usuário é renderizar o conteúdo de um elemento usando sua fonte monoespaçada padrão, embora isso não seja obrigatório pelo padrão HTML.</p><br>
+            <p><big>Notas de Uso:</big></p><br>
+            <p>Outros elementos podem ser usados ​​em conjunto &lt;kbd&gt; para representar cenários mais específicos:
+            </p>
+            <ul style="
+                        margin-left: 4%;
+                        margin-right: 2%;">
+                <li>Aninhar um &lt;kbd&gt; elemento dentro de outro &lt;kbd&gt; elemento representa uma chave real ou outra unidade de entrada como uma parte de uma entrada maior.</li>
+                <li>Aninhar um &lt;kbd&gt; elemento dentro de um <abbr title="O elemento HTML é usado para incluir o texto embutido que representa a saída de amostra (ou entre aspas) de um programa de computador. Seu conteúdo é normalmente renderizado usando a fonte monoespaçada padrão do navegador
+                    
+Para ler mais: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/samp">&lt;samp&gt;</abbr> elemento representa a entrada que foi ecoada de volta para o usuário pelo sistema.</li>
+                <li>Aninhar um &lt;samp&gt; elemento dentro de um &lt;kbd&gt; elemento, por outro lado, representa uma entrada baseada no texto apresentado pelo sistema, como nomes de menus e itens de menu, ou nomes de botões exibidos na tela.</li>
+            </ul><br>
+            <p><big>Dica:</big> esta tag não está obsoleta. No entanto, é possível obter um efeito mais rico usando CSS</p>
+            <br><p>Sintaxe:</p>
+            <figure class="fc"><img src="img/kbdsint.jpg" alt="Sintaxe <kbd>"></figure>
+            <br><p>Exemplo 1)</p><br>
+            <figure class="fc"><img src="img/cdgExKbd.jpg" alt="Exemplo <kbd>"></figure>
+            <br><p>Resultado:</p><br>
+            <div style="border: 2px solid #000;
+                        padding: 1%;
+                        width: 80%;
+                        margin-left: 10%;
+                        ">
+                <big>
+                    <center>
+                        <p>Para preencher várias células de uma planilha Excel da Microsoft ou Calc da Organização OpenOffice, com o mesmo valor <kbd>marcam-se</kbd> as <kbd>células</kbd> a serem preenchidas, independente de estarem ou não juntas <kbd>digite</kbd> então o <kbd>valor</kbd> e a seguir aperte a tecla <kbd>Crtl</kbd> e depois a tecla <kbd>Enter</kbd>.</p>
+                    </center>
+                </big>
+            </div><br><br>
+            <p>Exemplo 2)</p>
+            <p>Nesse exemplo, vamos usar um pequeno trecho em CSS e demonstrar, na prática, uma utilidade muito legal para essa tag html.</p><br>
+            <p>Usaremos o seguinte código HTML:</p><br>
+            <figure class="fc"><img src="img/cdgEx2KbdHTML.jpg" alt="Exemplo 2 - HTML <kbd>"></figure>
+            <br><p>Que resulta no seguinte aspecto visual, observe:</p><br>
+            <div style="border: 2px solid #000;
+                        padding: 1%;
+                        width: 80%;
+                        margin-left: 10%;
+                        ">
+                <big>
+                    <center>
+                        <p>Por favor, pressione <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> para renderizar novamente a página</p>
+                    </center>
+                </big>
+            </div><br><br>
+            <p>Agora, usaremos o seguinte código CSS: <big><font color="red">(NÃO é necessário compreendê-lo no momento!!)</font></big></p><br>
+            <figure class="fc"><img src="img/cdgEx2KbdCSS.jpg" alt="Exemplo 2 - CSS <kbd>"></figure>
+            <br><p>E agora, unindo o HTML ao CSS, temos o seguinte efeito:</p><br>
+            <div style="border: 2px solid #000;
+                        padding: 1%;
+                        width: 80%;
+                        margin-left: 10%;
+                        ">
+                <big>
+                    <center>
+                        <p>Por favor, pressione <kbd class="tecla">Ctrl</kbd> + <kbd class="tecla">Shift</kbd> + <kbd class="tecla">R</kbd> para renderizar novamente a página</p>
+                    </center>
+                </big>
+            </div><br><br>
+            <p>Extra:</p><br>
+            <div style="border: 2px solid #000;
+                        padding: 1%;
+                        width: 50%;
+                        margin-left: 25%;
+                        ">
+                <big>
+                    <center>
+                        <p>Press <kbd class="tecla">Ctrl</kbd> + <kbd class="tecla">C</kbd> para copiar o texto (Windows).</p><br>
+                        <p>Press <kbd class="tecla">Cmd</kbd> + <kbd class="tecla">C</kbd> para copiar o texto (Mac OS).</p>
 
-
-
-
-
-
-
-            <br><br><br><br><br><br><br><br>
+                    </center>
+                </big>
+            </div><br>
+            <br><br>
+            <h2>Conteúdo Extra!</h2><br>
             <a name="tagSemâ"></a>
             <details>
                 <summary>O que são Tags Semânticas e quais são elas?</summary><br>
@@ -482,10 +597,13 @@
                                                                 border: 2px solid #000"
                 src="tagsSemanticas.html" frameborder="0"></iframe>
                 <br><br>
-                <p id="am" style="text-align: center; color:red; margin:0; border: 5px outset red; padding: 1.5%;  cursor: pointer; width: 40%; margin-left:30%; font-size: 18px; "><a href="tagsSemanticas.html" target="_blank">CLIQUE AQUI PARA AMPLIAR!!</a></p><br><br><br>
+                <p id="am" style="text-align: center; color:red; margin:0; border: 5px outset red; padding: 1.5%;  cursor: pointer; width: 40%; margin-left:30%; font-size: 18px; "><a href="tagsSemanticas.html" target="_blank">CLIQUE AQUI PARA AMPLIAR!!</a></p><br>
                 </div>
             </details>
             <br><br>
+            <div style="border: 5px dashed #F00 ;"></div>
+            <br><br><br>
+            
             <div id="citacoes">
                 <ul>
                     <b style="font-family: 'Rock Salt', cursive;">CITAÇÕES</b>
@@ -504,14 +622,19 @@
                     <li><a href="https://www.w3schools.com/tags/tag_cite.asp">https://www.w3schools.com/tags/tag_cite.asp</a> - acesso em 12/09/2021</li>
                     <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/bdo">https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/bdo</a> - acesso em 12/09/2021</li>
                     <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/User_agent">https://developer.mozilla.org/en-US/docs/Glossary/User_agent</a> - acesso em 12/09/2021</li>
-                    
+                    <li><a href="https://www.w3schools.com/tags/tag_code.asp">https://www.w3schools.com/tags/tag_code.asp</a> - acesso em 12/09/2021</li>
+                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/code">https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/code</a> - acesso em 12/09/2021</li>
+                    <li><a href="https://www.portaldefinancas.com/html/pre.html">https://www.portaldefinancas.com/html/pre.html</a> - acesso em 12/09/2021</li>
+                    <li><a href="https://www.portaldefinancas.com/html/kbd.html">https://www.portaldefinancas.com/html/kbd.html</a> - acesso em 13/09/2021</li>
+                    <li><a href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_phrase_kbd">https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_phrase_kbd</a> - acesso em 13/09/2021</li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd</a> - acesso em 13/09/2021</li>
                 </ul>
             </div>
             <br><br>
-            <p><big>Ultima modificação em</big>: 12/09/2021 às 22:32, horário oficial de Brasilia - Brasil</b></p><br>
-            <p style="font-family: 'Rock Salt', cursive; text-align: center;">G. EMANUEL</p>
-            <a href="https://www.instagram.com/emanuel18.iec/" target="_blank"><p style="font-family: 'Rock Salt', cursive; text-align: center; color:#000;text-decoration: none;">@emanuel18.iec</p></a></p>
-            <p style="font-family: 'Rock Salt', cursive; text-align: center;">1 2 / 0 9 / 2 0 2 1</p>      
+            <p><big>Ultima modificação em</big>: 13/09/2021 às 01:14, horário oficial de Brasilia - Brasil</b></p><br>
+            <footer>
+                <object width="100%" data="rodapéFinal.html"></object>
+            </footer>   
         </div>
     </body>
 </html>
