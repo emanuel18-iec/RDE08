@@ -331,13 +331,11 @@
                 <video width="80%" controls style="box-shadow: 5px 5px 20px #000">
                     <source src="vid/abbrNaPrat.mp4" type="video/mp4">
                 </video>
-            </figure>
-            
-            <br>
-            <br>
+            </figure><br><br>
+
             <a name="tagADDRESS"></a><br>
             <h2>Tag: <span>&lt;ADDRESS&gt;</span></h2><br>
-            <p>O Elemento HTML &lt;address&gt; fornece informações de contato para seu ancestral <a href="#tagSemâ">&lt;article&gt;</a> ou &lt;body&gt; mais próximo; no segundo caso, ele se aplica ao documento inteiro.</p>
+            <p>A tag &lt;address&gt; define as informações de contato do autor / proprietário de um documento ou artigo.</p>
             <p>A informação de contato fornecida por um conteúdo do elemento &lt;address&gt; pode tomar qualquer forma que é apropriada para o contexto, e pode incluir qualquer tipo de informação de contato necessária, como endereço físico, URL, email, telefone, mídia social, coordenadas geográficas, por aí vai. Deve incluir o nome da pessoa, grupo, ou organização para qual as informações de contato se referem.</p>
             <p>&lt;address&gt; pode ser usado em uma variedade de contextos, como fornecer informação de contato de uma empresa no <a href="#tagSemâ">header</a> da página, ou indicar o autor de um artigo incluindo um elemento &lt;address&gt; dentro do <a href="#tagSemâ">&lt;article&gt;&lt;/article&gt;</a></p><br>
             <p><big>Notas de Uso:</big></p>
@@ -348,12 +346,10 @@
                 <li>Este elemento não deve conter mais informação além da informação de contato, como uma data de publicação (a qual pertence ao elemento <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/time" target="_blank">&lt;time&gt;</a>).</li>
                 <li>Tipicamente um elemento &lt;address&gt; pode ser posicionado dentro do elemento <a href="#tagSemâ">&lt;footer&gt;</a> da seção atual, se houver um.</li>
             </ul>
-
-
-            <p>Sintaxe:</p>
-            <figure class="fc"><img src="img/abbrsint.jpg" alt="Sintaxe <abbr>"></figure>
+            <br><p>Sintaxe:</p>
+            <figure class="fc"><img src="img/addresssint.jpg" alt="Sintaxe <address"></figure>
             <br><p>Exemplo:</p><br>
-            <figure class="fc"><img src="img/cdgExAbbr.jpg" alt="Exemplo <abbr>"></figure>
+            <figure class="fc"><img src="img/cdgExAddress.jpg" alt="Exemplo <address>"></figure>
             <br><p>Resultado:</p><br>
             <div style="border: 2px solid #000;
                         padding: 1%;
@@ -362,12 +358,121 @@
                         ">
                 <big>
                     <center>
-                        <p><abbr title="HyperText Markup Language">HTML</abbr>é uma linguagem de marcação utilizada na construção de páginas na Web."</p>
+                        <address>
+                            Você pode entrar em contato conosco em:<br>
+                            <a href="https://irati.ifpr.edu.br/">IFPR - Campus Irati</a><br>
+                            R. Pedro Koppe, 100 - Vila São João<br>
+                            84.507-302<br>
+                            (42) 2104-0200<br>
+                            Irati - PR
+                          </address>
                     </center>
                 </big>
             </div>
-            <br><br><br>
+            <br><br>
 
+            <a name="tagCITE"></a><br>
+            <h2>Tag: <span>&lt;CITE&gt;</span></h2><br>
+            <p>A tag &lt;cite&gt; representa uma referência a um trabalho artístico. Deve incluir o título do trabalho ou uma URL de referência, que pode ser em uma forma abreviada de acordo com as convenções usadas para a adição dos metadados de citação.</p>
+            <p>O texto no &lt;cite&gt; elemento geralmente é processado em itálico.</p><br>
+            <p><big>Notas de Uso:</big></p>
+            <ul style="
+                        margin-left: 4%;
+                        margin-right: 2%;">
+                <li>Um trabalho criativo deve conter uma citação de um livro, um documento, um ensaio, um poema, um filme, um programa de televisão, um videogame, uma escultura, uma pintura, uma produção cinematográfica, um jogo, uma ópera, um musical , uma exibição, um relatório de um caso legal, um programa de computador, um site, uma página da web, um post de um blog ou comentário, um post em um fórum ou um comentário no mesmo, um tweet, uma obra ou discurso , etc.</li>
+                <li>O W3C específicou que alguns estados, para referenciar um trabalho criativo, deve incluir o nome do autor, enquanto um WHATWG específico que não deve ser incluído o nome do autor sob nenhuma circustância.</li>
+                <li>Use o atributo <span class="atr">cite</span> em um elemento &lt;blockquote&gt; ou &lt;q&gt; para referenciar uma fonte online.
+                </li>
+            </ul>
+            <br><p>Sintaxe:</p>
+            <figure class="fc"><img src="img/citesint.jpg" alt="Sintaxe <cite>"></figure>
+            <br><p>Exemplo:</p><br>
+            <figure class="fc"><img src="img/cdgExCite.jpg" alt="Exemplo <cite>"></figure>
+            <br><p>Resultado:</p><br>
+            <div style="border: 2px solid #000;
+                        padding: 1%;
+                        width: 75%;
+                        margin-left: 12.5%;
+                        ">
+                <big>
+                    <center>
+                        <p>Mais informações podem ser encontradas em <cite>[ISO-0000]</cite>.</p>
+                    </center>
+                </big>
+            </div>
+            <br><br>
+            
+            <a name="tagBDO"></a><br>
+            <h2>Tag: <span>&lt;BDO&gt;</span></h2><br>
+            <p>A tag &lt;bdoe&gt; (<i>bidirectional override</i>) é usada para substituir a direcionalidade atual do texto. Isso faz com que a direcionalidade dos objetos seja ignorada em favor da direcionalidade especificada</p><br>
+            <p><big>Atributo</big> <span class="atr"></span></p>
+            <h3 style="margin-right: 2%;"><span style="font-size: 1.3em;">&#10149;</span> &lt;dir&gt; <span style="font-size: 1.3em;">&#10170;	</span><span style="font-size: 16px;">Determina a direção do texto neste elemento. Os valores possíveis são:</span></h3><br>
+            <table class="info-table" style="margin-left: 5%;">
+                <tr>
+                    <th>Valor:</th>
+                    <th>Descrição</th>
+                </tr>
+                <tr>
+                    <td><span class="atr">ltr</span></td>
+                    <td>Indica que o texto ficará da <big>Esquerda para a Direita</big> (<span class="CR">L</span>eft-<span class="CR">T</span>o-<span class="CR">R</span>ight).</td>
+                </tr>
+                <tr>
+                    <td><span class="atr">rtl</span></td>
+                    <td>Indica que o texto ficará da <big>Direita para a Esquerda</big> (<span class="CR">R</span>eft-<span class="CR">T</span>o-<span class="CR">L</span>ight).</td>
+                </tr>
+            </table>
+            <br><p>Sintaxe:</p>
+            <figure class="fc"><img src="img/bdosint.jpg" alt="Sintaxe <bdo>"></figure>
+            <br><p>Exemplo:</p><br>
+            <figure class="fc"><img src="img/cdgExBdo.jpg" alt="Exemplo <bdo>"></figure>
+            <br><p>Resultado:</p><br>
+            <div style="border: 2px solid #000;
+                        padding: 1%;
+                        width: 50%;
+                        margin-left: 25%;
+                        ">
+                <big>
+                    <center>
+                        <p>Este texto ficará da esquerda para a direita.</p>
+                        <p><bdo dir="rtl">Este texto ficará da direita para a esquerda.</bdo></p>
+                    </center>
+                </big>
+            </div>
+            <br><br>
+
+            
+            <a name="tagCODE"></a><br>
+            <h2>Tag: <span>&lt;CODE&gt;</span></h2><br>
+            <p>A tag &lt;code&gt; apresenta seu conteúdo estilizado de maneira a indicar que o texto é um pequeno fragmento de código. Por padrão, o conteúdo é exibido utilizando a fonte monoespaçada padrão do <abbr title="Ou apenas agente de usuário, é um programa de computador que representa uma pessoa, por exemplo, um navegador em um contexto da web.">user agent's</abbr></p>
+            <p>Ou seja, tag &lt;code&gt; é usada para definir um pedaço de código de computador. O conteúdo interno é exibido na fonte monoespaçada padrão do navegador.</p>
+            <p><big>Dica:</big> esta tag não está obsoleta. No entanto, é possível obter um efeito mais rico usando CSS</p>
+            <br><p>Sintaxe:</p>
+            <figure class="fc"><img src="img/codesint.jpg" alt="Sintaxe <code>"></figure>
+            <br><p>Exemplo:</p><br>
+            <figure class="fc"><img src="img/cdgExCode.jpg" alt="Exemplo <code>"></figure>
+            <br><p>Resultado:</p><br>
+            <div style="border: 2px solid #000;
+                        padding: 1%;
+                        width: 50%;
+                        margin-left: 25%;
+                        ">
+                <big>
+                    <center>
+                        <p>A função <code>selectAll()</code> destaca todo o texto no
+                            campo de entrada então o usuário pode, por exemplo, copiar ou deletar o texto.</p>
+                            
+                    </center>
+                </big>
+            </div>
+
+
+
+
+
+
+
+
+            <br><br><br><br><br><br><br><br>
             <a name="tagSemâ"></a>
             <details>
                 <summary>O que são Tags Semânticas e quais são elas?</summary><br>
@@ -380,10 +485,7 @@
                 <p id="am" style="text-align: center; color:red; margin:0; border: 5px outset red; padding: 1.5%;  cursor: pointer; width: 40%; margin-left:30%; font-size: 18px; "><a href="tagsSemanticas.html" target="_blank">CLIQUE AQUI PARA AMPLIAR!!</a></p><br><br><br>
                 </div>
             </details>
-            
-            
-            
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br>
             <div id="citacoes">
                 <ul>
                     <b style="font-family: 'Rock Salt', cursive;">CITAÇÕES</b>
@@ -395,16 +497,21 @@
                     <li><a href="https://www.w3schools.com/tags/tag_blockquote.asp">https://www.w3schools.com/tags/tag_blockquote.asp</a> - acesso em 11/09/2021</li>
                     <li><a href="https://www.quackit.com/html_5/tags/html_q_tag.cfm">https://www.quackit.com/html_5/tags/html_q_tag.cfm</a> - acesso em 12/09/2021</li>
                     <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/abbr">https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/abbr</a> - acesso em 12/09/2021</li>
+                    <li><a href="https://www.w3schools.com/tags/tag_address.asp">https://www.w3schools.com/tags/tag_address.asp</a> - acesso em 12/09/2021</li>
+                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/address">https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/address</a> - acesso em 12/09/2021</li>
+                    <li><a href="https://www.techonthenet.com/html/elements/address_tag.php">https://www.techonthenet.com/html/elements/address_tag.php</a> - acesso em 12/09/2021</li>
+                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/cite">https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/cite</a> - acesso em 12/09/2021</li>
+                    <li><a href="https://www.w3schools.com/tags/tag_cite.asp">https://www.w3schools.com/tags/tag_cite.asp</a> - acesso em 12/09/2021</li>
+                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/bdo">https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/bdo</a> - acesso em 12/09/2021</li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/User_agent">https://developer.mozilla.org/en-US/docs/Glossary/User_agent</a> - acesso em 12/09/2021</li>
+                    
                 </ul>
             </div>
             <br><br>
-            <p><big>Ultima modificação em</big>: 12/09/2021 às 20:19, horário oficial de Brasilia - Brasil</b></p><br>
+            <p><big>Ultima modificação em</big>: 12/09/2021 às 22:32, horário oficial de Brasilia - Brasil</b></p><br>
             <p style="font-family: 'Rock Salt', cursive; text-align: center;">G. EMANUEL</p>
             <a href="https://www.instagram.com/emanuel18.iec/" target="_blank"><p style="font-family: 'Rock Salt', cursive; text-align: center; color:#000;text-decoration: none;">@emanuel18.iec</p></a></p>
-            <p style="font-family: 'Rock Salt', cursive; text-align: center;">1 2 / 0 9 / 2 0 2 1</p>
-
-            
-
+            <p style="font-family: 'Rock Salt', cursive; text-align: center;">1 2 / 0 9 / 2 0 2 1</p>      
         </div>
     </body>
 </html>

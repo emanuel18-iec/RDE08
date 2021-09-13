@@ -118,3 +118,8 @@ blockquote, q{
     background-color: rgb(50, 204, 30);
     box-shadow: 7px 7px 10px #000;
 }
+
+.CR{
+    color: red;
+    font-size: 14px;
+}
